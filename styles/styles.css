@@ -113,7 +113,7 @@ width: 79px;
     margin-block: 120px;
 }
 
-h6{
+h1{
    margin-top: 162px;
 }
 p.banner-para{
@@ -121,8 +121,8 @@ p.banner-para{
 }
 .image-banner{
     margin-top: 106px;
-    width: 570px;
-    height: 355px;
+    max-width: 570px;
+    max-height: 355px;
 }
 
 /* our plant */
@@ -134,7 +134,7 @@ p.banner-para{
   font-size: 22px;
   text-align: center;
   height: 54px;
-  width: 888px;
+  max-width: 888px;
   margin-left: 126px;
   margin-right: 126px;
   margin-top: 16px;
@@ -355,51 +355,295 @@ input[type="submit"]:hover {
 
 /* footer design */
 
-.footer-list1 , .footer-list2{
-  list-style: none;
-  color: gray;
-  width: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 25px;
-}
-
-.footer-para{
-  margin-top: 10px;
-  max-width: 350px;
-  font-size: 22px;
-}
-
-.footer-icon{
+footer {
+  max-width: 1440px;
+  height: 348px;
+  background-color: #fafcff;
+  margin-inline: -30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
 }
-footer{
-  padding-block: 50px;
-}
-.footer-all{
-  /* display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-left: 160px;
-  margin-right: 160px;
-  align-items: flex-start; */
 
+.footer-container {
   height: 248px;
-  max-width:1120px;
+  width: 100%;
   display: grid;
   grid-template-columns: 320px repeat(2, 130px) 220px;
   justify-content: space-between;
   align-items: flex-start;
   padding-inline: 20px;
-  margin: 0 auto;
+}
+
+.footer-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.footer-container ul li {
+  list-style: none;
+}
+
+.footer-container li a {
+  text-decoration: none;
+  color: #6b7280;
+}
+
+.foot-1 p {
+  margin-top: 15px;
+  font-size: 1.35rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.foot-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+  gap: 24px;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .hide-item{
+    display: none;
+  }
+  .container{
+    flex-direction: column-reverse;
+    gap: 28px;
+    margin-block: 10px;
+}
+header{
+  padding-inline: 20px;
+
+}
+.navbar{
+  margin-top: 20px;
+}
+.nav-items{
+  margin-right: 0px;
+}
+h1{
+   margin-top: 5px;
+   font-size: 24px;
+}
+.image-banner{
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    margin-right: -20px;
+}
+.bold-font-color{
+  font-size: 35px;
+}
+.orange-color{
+    font-size: 35px;
+}
+.card-container{
+  grid-template-columns: repeat(2,1fr);
+  padding-inline: 20px;
+ 
+}
+.our-plant{
+  padding-inline: 20px;
+}
+.plant-para{
+  font-size: 16px;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.trusted-badge{
+  display: none;
+}
+.lover-section{
+  flex-direction: column;
+  padding-inline: 20px;
+}
+.lover-section{
+  margin-top: 40px;
+}
+.lover-text{
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 38px;
+  font-size: 16px;
 
 }
 
 
+h6{
+   margin-top: 80px;
+}
+p.deal-para{
+    margin-top: 15px;
+}
+
+.deal-header{
+  font-size: 50px;
+  text-align: center;
+}
+.deal-para{
+  font-size: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 16px;
+  text-align: center;
+
+}
+
+/* deal images */
+.deal-container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+width: 100%;
+gap: 28px;
+margin-block: 100px;
+padding-inline: 20px;
+
+}
+.latest-deals{
+    padding-inline: 20px;
+}
+.left-deal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.right-deal{
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+
+}
+.deal-container a{
+    color: white;
+  }
+.first-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-bloom.png");
+  width: 100%;
+  height: 184px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.second-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-ana.png");
+  width: 100%;
+  height: 184px;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.third-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/deal-zabo.png");
+  width: 100%;
+  height: 184px;
+  background-repeat: no-repeat;
+    background-position: center;
+  background-size: cover;
+  border-radius: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+@media screen and (max-width: 576px) {
+  .join-container {
+    height: 275px;
+    margin-inline: -16px;
+    margin-top: 45px;
+  }
+
+  form {
+    width: 85%;
+  }
+
+  form input[type="email"] {
+    padding-inline: 20px 120px;
+  }
+
+  form input[type="submit"] {
+    width: 100px;
+  }
+}
+.store-image{
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    margin-inline: -16px;
+    padding-inline: 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "foot-1" "foot-2" "foot-3" "foot-4";
+    row-gap: 25px;
+  
+  }
+
+  .footer-container ul {
+    gap: 25px;
+  }
+
+  .foot-1 {
+    max-width: 100%;
+  }
+
+  .foot-1 p {
+    font-size: 1rem;
+  }
+}
+.lover-image{
+  height: 100%;
+  width: 100%;
+}
+.deal-para{
+  font-size: 16px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 16px;
+  text-align: center;
+
+}
+}
