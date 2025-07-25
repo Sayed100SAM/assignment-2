@@ -38,6 +38,19 @@ box-sizing:border-box ;
     max-width: 1140px;
     margin: 0 auto;
 }
+
+.btn-primary{
+  background-color: #E95A08;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 18px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  gap:10px;
+  margin-top: 19px;
+  margin-bottom:19px;
+}
 /* nav colors */
 /* Home color  */
 .home-color{
@@ -71,8 +84,11 @@ width: 79px;
   font-size: 65px;
   font-weight: bold;
 }
-
-
+.card-text-color{
+  color: #111111;
+  margin-left: 69px;
+  margin-right: 69px;
+}
 /* nav design */
 .navbar{
   justify-content: space-between;
@@ -107,4 +123,37 @@ p.banner-para{
     margin-top: 106px;
     width: 570px;
     height: 355px;
+}
+
+/* our plant */
+.plant-header{
+  font-size: 50px;
+  text-align: center;
+}
+.plant-para{
+  font-size: 22px;
+  text-align: center;
+  height: 54px;
+  width: 888px;
+  margin-left: 126px;
+  margin-right: 126px;
+  margin-top: 16px;
+
+}
+
+/* card design */
+p.card-text{
+  font-size: 22px;
+}
+.button{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap:20px ;
+  row-gap: 30px;
+  margin-top: 30px;
 }
