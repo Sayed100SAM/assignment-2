@@ -314,8 +314,9 @@ margin-block: 100px;
   align-items: center;
   flex-direction: column;
 }
-.join-container .h1{
-  font-size: 3rem;
+
+.join-container, h4{
+  font-size: 1.5rem;
 }
 .join-container .join-title {
   color: white;
@@ -351,3 +352,54 @@ form input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #470c83;
 }
+
+/* footer design */
+
+.footer-list1 , .footer-list2{
+  list-style: none;
+  color: gray;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.footer-para{
+  margin-top: 10px;
+  max-width: 350px;
+  font-size: 22px;
+}
+
+.footer-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+footer{
+  padding-block: 50px;
+}
+.footer-all{
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 160px;
+  margin-right: 160px;
+  align-items: flex-start; */
+
+  height: 248px;
+  max-width:1120px;
+  display: grid;
+  grid-template-columns: 320px repeat(2, 130px) 220px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-inline: 20px;
+  margin: 0 auto;
+
+}
+
+
