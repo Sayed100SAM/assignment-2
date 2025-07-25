@@ -157,3 +157,39 @@ p.card-text{
   row-gap: 30px;
   margin-top: 30px;
 }
+
+/* badge section */
+.lover-header{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.lover-section{
+  margin-top: 210px;
+}
+
+.lover-text{
+  margin-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 38px;
+  font-size: 22px;
+}
+.lover-section{
+  justify-content: space-between;
+}
+.position-relative {
+  position: relative;
+}
+
+.lover-image{
+  height: 597px;
+  width: 540px;
+}
+.trusted-badge {
+  position: absolute;
+  top: -135px;
+  right: -100px; 
+  width: 286px;
+  z-index: 15;
+}
+
