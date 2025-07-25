@@ -11,7 +11,7 @@ box-sizing:border-box ;
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -20,10 +20,11 @@ box-sizing:border-box ;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-.noto-serif-font{
+
+.noto-serif{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
@@ -50,12 +51,28 @@ color: #8987A1;
 height:24px;
 width:73px;
 }
+.paragraph2-color2{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+}
 /* cart */
 .cart-color{
 color:#000000 ;
 height:24px ;
 width: 79px;
 }
+.orange-color{
+    color: #E95A08;
+    font-size: 65px;
+    font-weight: bold;
+}
+.bold-font-color{
+  color:#000000 ;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+
 /* nav design */
 .navbar{
   justify-content: space-between;
@@ -69,4 +86,25 @@ width: 79px;
 .nav-link{
     text-decoration: none;
     font-weight: 500;
+}
+
+/* banner items */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-block: 120px;
+}
+
+h6{
+   margin-top: 162px;
+}
+p.banner-para{
+    margin-top: 15px;
+}
+.image-banner{
+    margin-top: 106px;
+    width: 570px;
+    height: 355px;
 }
