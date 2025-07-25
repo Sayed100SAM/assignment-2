@@ -296,5 +296,58 @@ margin-block: 100px;
   align-items: center;
   flex-direction: column;
 
+}
 
+/* join section */
+
+.join-container {
+  background-image: linear-gradient(rgba(7, 51, 79, 0.2)),
+    url("../assets/news-letter-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
+  margin-inline: -30px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.join-container .h1{
+  font-size: 3rem;
+}
+.join-container .join-title {
+  color: white;
+}
+
+form {
+  width: 700px;
+  position: relative;
+  margin-top: 15px;
+}
+
+form input[type="email"] {
+  width: 100%;
+  height: 50px;
+  padding-inline: 20px 170px;
+  border: none;
+  outline: none;
+}
+
+form input[type="submit"] {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  right: 0;
+  color: white;
+  background-color: #e95a08;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #470c83;
 }
